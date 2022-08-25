@@ -1,9 +1,19 @@
 package com.lastesteam.portalsgie;
 
-public class Empleado {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Employee {
     private long id;
     private String profile;
 
+    private List<Transaction> Transactions;
+
+    public Employee(long id, String profile, List<Transaction> transactions) {
+        this.id = id;
+        this.profile = profile;
+        Transactions = new ArrayList<Transaction>(transactions);
+    }
     public long getId() {
         return id;
     }
@@ -20,8 +30,5 @@ public class Empleado {
         this.profile = profile;
     }
 
-    public Empleado(long id, String profile) {
-        this.id = id;
-        this.profile = profile;
-    }
+
 }

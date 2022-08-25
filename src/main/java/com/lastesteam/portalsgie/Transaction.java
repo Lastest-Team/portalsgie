@@ -1,27 +1,27 @@
 package com.lastesteam.portalsgie;
 
-public class MovimientoDinero {
-    private long id;
+public class Transaction {
+    private int id;
     private String concept;
     private double amount;
-    /*private User user;
-    private Enterprise enterprise;
+    private User user;
+    /*private Enterprise enterprise;
     */
-    public MovimientoDinero(long id, String concept, double amount /*,User user, Enterprise enterprise*/) {
+    public Transaction(int id, String concept, double amount , User user/*, Enterprise enterprise*/) {
         this.id = id;
         this.concept = concept;
         this.amount = amount;
+        this.user = new User(user.getId(),user.getName(),user.getUsername(),user.getEmail(),user.getPassword());
         /*
-        this.user = user;
         this.enterprise = enterprise;W
         */
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -40,7 +40,7 @@ public class MovimientoDinero {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-    /*
+
     public User getUser() {
         return user;
     }
@@ -48,7 +48,7 @@ public class MovimientoDinero {
     public void setUser(User user) {
         this.user = user;
     }
-
+/*
     public Enterprise getEnterprise() {
         return enterprise;
     }
@@ -64,6 +64,7 @@ public class MovimientoDinero {
         System.out.println(getConcept());
         System.out.println("Amount");
         System.out.println(getAmount());
+        user.printUser();
         System.out.println("-------------");
     }
 }
