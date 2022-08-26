@@ -16,7 +16,7 @@ public class Enterprise {
     private List<User> user;
     private List<Transaction> transaction;
 
-    public Enterprise(int id, String name, String document, String phone, String address, List<User> user, List<Transaction> transactions) {
+    public Enterprise(int id, String name, String document, String phone, String address, List<User> user, List<Transaction> transaction) {
         this.id = id;
         this.name = name;
         this.document = document;
@@ -85,4 +85,34 @@ public class Enterprise {
     public void setTransaction(List<Transaction> transaction) {
         this.transaction = transaction;
     }
+
+    public void showEnterprise(){
+        System.out.println("ID");
+        System.out.println(getId());
+        System.out.println("Name");
+        System.out.println(getName());
+        System.out.println("Address");
+        System.out.println(getAddress());
+        System.out.println("Phone");
+        System.out.println(getPhone());
+        System.out.println("Document");
+        System.out.println(getDocument());
+        /*user.printUser();
+        System.out.println("-------------");*/
+    }
+
+
+
+/*
+    public void showMovementMoney(){
+        System.out.println("ID");
+        System.out.println(getId());
+        System.out.println("Concept");
+        System.out.println(getConcept());
+        System.out.println("Amount");
+        System.out.println(getAmount());
+        user.printUser();
+        System.out.println("-------------");
+    }*/
+
 }
