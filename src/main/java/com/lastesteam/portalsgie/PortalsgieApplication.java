@@ -8,6 +8,8 @@ public class PortalsgieApplication {
 		User user1 = new User(12,"Jhon Doe","jhond","jhond@correo.com","qwerty");
 		Transaction Transaction = new Transaction(2222,"Nomina",2.33,user1);
 		Transaction.showMovementMoney();
+		//Enterprise Enterprise = new Enterprise(/*name: address: phone: document:*/ );
+		//Enterprise.showEnterprise();
 
 
 /*
