@@ -5,16 +5,15 @@ public class Transaction {
     private String concept;
     private double amount;
     private User user;
-    /*private Enterprise enterprise;
-    */
-    public Transaction(int id, String concept, double amount , User user/*, Enterprise enterprise*/) {
+    private Enterprise enterprise;
+
+    public Transaction(int id, String concept, double amount , User user, Enterprise enterprise) {
         this.id = id;
         this.concept = concept;
         this.amount = amount;
         this.user = new User(user.getId(),user.getName(),user.getUsername(),user.getEmail(),user.getPassword());
-        /*
-        this.enterprise = enterprise;W
-        */
+        this.enterprise = enterprise;
+
     }
 
     public int getId() {
@@ -48,14 +47,10 @@ public class Transaction {
     public void setUser(User user) {
         this.user = user;
     }
-/*
-    public Enterprise getEnterprise() {
-        return enterprise;
-    }
 
-    public void setEnterprise(Enterprise enterprise) {
-        this.enterprise = enterprise;
-    }*/
+    public Enterprise getEnterprise() { return enterprise; }
+
+    public void setEnterprise(Enterprise enterprise) { this.enterprise = enterprise; }
 
     public void showMovementMoney(){
         System.out.println("ID");
