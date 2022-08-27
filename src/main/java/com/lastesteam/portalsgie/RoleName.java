@@ -1,5 +1,5 @@
 package com.lastesteam.portalsgie;
 
 public enum RoleName {
-    ADMIN,OPERARIO;
+    SUPERADMIN, ADMIN, OPERARIO, USUARIO;
 }
