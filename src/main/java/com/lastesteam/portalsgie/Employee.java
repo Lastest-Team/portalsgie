@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
-    private long id;
+    private int id;
 
     private String email;
     private Profile profile;
