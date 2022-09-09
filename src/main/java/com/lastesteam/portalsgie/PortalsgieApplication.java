@@ -1,12 +1,14 @@
 package com.lastesteam.portalsgie;
 
 import com.lastesteam.portalsgie.entities.User;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class PortalsgieApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(PortalsgieApplication.class, args);
+		SpringApplication.run(PortalsgieApplication.class, args);
 		/*instanciando una clase, user*/
 		/* alias = user1*/
 		User user1 = new User(12,"Jhon Doe","jhond","jhond@correo.com","qwerty");
