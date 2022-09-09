@@ -1,6 +1,6 @@
 package com.lastesteam.portalsgie;
 
-import com.sun.nio.sctp.HandlerResult;
+import com.lastesteam.portalsgie.entities.User;
 
 //@SpringBootApplication
 public class PortalsgieApplication {

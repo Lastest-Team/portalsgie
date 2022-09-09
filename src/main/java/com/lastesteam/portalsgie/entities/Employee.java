@@ -1,11 +1,11 @@
-package com.lastesteam.portalsgie;
+package com.lastesteam.portalsgie.entities;
 
 /*import javax.management.relation.Role;*/
 import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
-    private int id;
+    private long id;
 
     private String email;
     private Profile profile;

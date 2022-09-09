@@ -1,4 +1,4 @@
-package com.lastesteam.portalsgie;
+package com.lastesteam.portalsgie.entities;
 
 
 /*import java.management.relation.Role;*/

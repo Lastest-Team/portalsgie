@@ -1,4 +1,4 @@
-package com.lastesteam.portalsgie;
+package com.lastesteam.portalsgie.entities;
 
 public class Transaction {
     private int id;
